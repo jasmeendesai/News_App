@@ -8,6 +8,9 @@ Welcome to the News Application! This is a web application built using React and
 - View detailed information about each news article including title, description, source, and publication date.
 - Responsive design ensures a seamless user experience across different devices.
 
+![App Screenshot](screenshot.png)
+![App Screenshot](ScreenshotMobileview.png)
+![App Screenshot](ScreenshotMobileview2.png)
 ## Installation
 
 1. Clone the repository:
