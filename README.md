@@ -22,6 +22,8 @@ Welcome to the News Application! This is a web application built using React and
 <div align="center">
   <img src="ScreenshotMobileview2.png" alt="Image" />
 </div>
+
+
 ## Installation
 
 1. Clone the repository:
