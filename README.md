@@ -12,7 +12,7 @@ Welcome to the News Application! This is a web application built using React and
 #### Desktop view
 ![App Screenshot](screenshot.png)
 
-### Mobile view
+#### Mobile view
 ![App Screenshot](ScreenshotMobileview.png)
 ![App Screenshot](ScreenshotMobileview2.png)
 ## Installation
