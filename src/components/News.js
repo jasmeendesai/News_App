@@ -65,53 +65,8 @@ export class News extends Component {
   }
 
   async componentDidMount() {
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=c6950daae9bb4c1993257156e8f4e8b5&page=1&pageSize=${this.props.pageSize}`
-    // this.setState({
-    //     loading : true
-    // })
-    // let data = await fetch(url)
-    // let parseData = await data.json()
-    // this.setState({
-    //     articles : parseData.articles,
-    //     totalResults : parseData.totalResults,
-    //     loading : false
-    // })
     this.update();
   }
-
-  // handlePreClick= async ()=>{
-  // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=c6950daae9bb4c1993257156e8f4e8b5&page=${this.state.page-1}&pageSize=${this.props.pageSize}`
-  // this.setState({
-  //     loading : true
-  // })
-  // let data = await fetch(url)
-  // let parseData = await data.json()
-  // this.setState({
-  //     articles : parseData.articles,
-  //     page : this.state.page-1,
-  //     loading : false
-  // })
-  //   this.setState({page:this.state.page-1})
-  //   this.update()
-  // }
-  // handleNextClick= async ()=>{
-  // if(!(this.state.page+1 > Math.ceil(this.state.totalResults/this.props.pageSize))){
-  // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=c6950daae9bb4c1993257156e8f4e8b5&page=${this.state.page+1}&pageSize=${this.props.pageSize}`
-  // this.setState({
-  //     loading : true
-  // })
-  // let data = await fetch(url)
-  // let parseData = await data.json()
-  // this.setState({
-  //     articles : parseData.articles,
-  //     page : this.state.page+1,
-  //     loading : false
-
-  // })
-  // }
-  // this.setState({page:this.state.page+1})
-  // this.update()
-  // }
 
   render() {
     return (
@@ -153,14 +108,6 @@ export class News extends Component {
             </div>
           </div>
         </InfiniteScroll>
-        {/* {!this.state.loading && <div className="container d-flex justify-content-between my-3">
-          <button disabled={this.state.page<=1} type="button" className="btn btn-primary" onClick={this.handlePreClick}>
-            &larr; Previous
-          </button>
-          <button disabled={this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize)} type="button" className="btn btn-primary" onClick={this.handleNextClick}>
-            Next &rarr;
-          </button>
-        </div>} */}
       </>
     );
   }
